@@ -6,6 +6,9 @@ saturdayFun('bathe my dog');
  const mondayWork= function(activity='go to the office'){
     return "This Monday, I will " +activity+".";
 }
-function wrapAdjective(){
-    
-} 
+
+function wrapAdjective(result='*'){
+        return function(inner="handsome"){
+            return `You are ${result}${inner}${result}!`
+        }
+}
